@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html> <head>
+<script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js%22%3E"></script> </head>
+
+<body>
+    <div id="mydiv"></div> <script type="text/babel">   
+const data = ["item 1", "item 2", "item 3"];
+function getItems() {
+   return data.map(element => <li>{element}</li>);
+}
+return (
+   <ul>
+     {items()}
+   </ul>
+);
+      ReactDOM.render(<Hello />, document.getElementById('mydiv'))
+</script>
+</body> 
+</html>
